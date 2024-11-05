@@ -1,0 +1,109 @@
+.kianur_main_div {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .kinaur_div_one {
+    width: 65%;
+  }
+  
+  .kinaur_div_two {
+    width: 30%;
+    padding: 20px;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 0px 24px rgba(0, 184, 184, 0.1);
+  }
+  
+  .fa-cloud-sun {
+    color: skyblue;
+  }
+  
+  .kinaur_div_one h6 {
+    line-height: 1.5rem;
+  }
+  
+  .kinaur_div_one_div img {
+    height: 50%;
+    width: 40%;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+  }
+  .kinaur_div_one_div img {
+    height: auto;       /* Maintain the aspect ratio */
+    max-height: 15rem;  /* Limit the maximum height */
+    margin-bottom: 3rem;
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .kinaur_div_one_div img {
+      width: 40vw;
+      height: 8rem;       /* Maintain the aspect ratio */
+      max-height: 15rem;  /* Limit the maximum height */
+      margin-bottom: 3rem;
+    }
+   
+  }
+  
+  .kinnaur_bg {
+    background: #f7f7f7;
+    height: 3rem;
+    padding-top: 0.6rem;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 4px;
+  }
+  
+
+
+
+  @media only screen and (max-width: 600px) {
+    .kianur_main_div {
+        display: block;
+        gap: 20px;
+      }
+
+      .kinaur_div_one {
+        width: 100%;
+      }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .kinaur_div_two {
+        width: 100%;
+    }
+}
+
+
+.fa-bowl-food,.fa-bed{
+    font-size: 2rem;
+}
+.bi-bus-front{
+    font-size: 1.7rem;
+}
+
+
+.kinaur_div_two{
+  position: sticky;
+  top: 3rem;
+}

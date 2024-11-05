@@ -1,0 +1,26 @@
+#about-us {
+    background-color: #f9f9f9;
+  }
+  
+  #about-us h2 {
+    color: #00B8B8;
+  }
+  
+  #about-us p {
+    color: #333;
+  }
+  
+  #about-us img {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #about-us .btn-primary {
+    background-color: #00B8B8;
+    border-color: #00B8B8;
+  }
+  
+  #about-us .btn-primary:hover {
+    background-color: #008c8c;
+    border-color: #008c8c;
+  }
+  

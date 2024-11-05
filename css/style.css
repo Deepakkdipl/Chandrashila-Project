@@ -1,0 +1,815 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+ *{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+/* Navbar background color */
+.navbar {
+  background-color: #00b8b8;
+  /* padding: 10px 20px; */
+}
+
+/* Brand logo */
+.logo {
+  height: 50px;
+  width: 50px;
+  /* object-fit: cover; */
+}
+
+/* Brand text */
+.navbar-brand span {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Nav link styles */
+.navbar-nav .nav-link {
+  color: white;
+  font-weight: 500;
+  margin: 0 15px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #cceff1;
+}
+
+.navbar-nav .nav-link.active {
+  color: white;
+  font-weight: bold;
+}
+
+/* Book Now button */
+.btn-book-now {
+  background-color: black;
+  color: #00b8b8;
+  padding: 8px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-book-now:hover {
+  background-color: #004d4d;
+  color: white;
+}
+
+/* Responsive styles */
+@media (max-width: 300px) {
+  .navbar-brand {
+    margin-left: 0;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .btn-book-now {
+    margin-top: 10px;
+  }
+}
+
+/* Top header background color */
+.top-header {
+  background-color: #000000;
+  font-size: 14px;
+}
+
+/* Contact info styles */
+.contact-info {
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-info i {
+  font-size: 16px;
+}
+
+/* Social media icons */
+.social-icons a {
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #00b8b8;
+}
+
+/* Responsive styles */
+@media (max-width: 300px) {
+  .contact-info {
+    justify-content: center;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+    justify-content: center;
+  }
+}
+
+/* Custom CSS for the image section */
+.image-section {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.image-section img {
+  width: 100%;
+  height: 750px;
+}
+
+.image-section h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4vw;
+  color: #090909;
+}
+
+.bg {
+  height: 30rem;
+  width: 100%;
+  background-image: url("/img/chnadrashila\ image.webp");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center; /* Center the image */
+  margin-bottom: 2rem;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  background-blend-mode: darken; /* Blends the overlay with the image */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .bg {
+    height: 25rem;
+    background-attachment: scroll; /* Allow the image to scroll on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .bg {
+    height: 20rem;
+    background-attachment: scroll;
+    background-size: cover; /* Adjust the background size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .bg {
+    height: 15rem;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: top; /* Align the background image to the top */
+  }
+}
+
+.bg h1 {
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 15%;
+}
+
+@media screen and(max-width:650) {
+}
+
+@media screen and (max-width: 650px) {
+  .bg h1 {
+    color: white;
+    font-size: 1.6rem;
+    text-align: center;
+    padding-top: 20%;
+  }
+}
+
+/* Ensure responsiveness for smaller devices */
+@media (max-width: 300px) {
+  .image-section h1 {
+    font-size: 8vw;
+  }
+  .image-section img {
+    width: 80%;
+    height: 91px;
+    display: none;
+  }
+}
+
+/* About section */
+.about-section {
+  padding: 50px 0;
+}
+
+.about-text h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.about-text hr {
+  width: 50px;
+  border-top: 3px solid #00bcd4;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.about-image img {
+  width: 100%;
+  height: 400px;
+  border-radius: 5px;
+}
+/* .about-image img:hover {
+    transform: scale(1.05);
+  } */
+
+@media (max-width: 300px) {
+  .about-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-text p {
+    font-size: 0.9rem;
+  }
+
+  /* .about-image img {
+        height: 100px;
+    } */
+}
+
+/* our gallery */
+#gallery h2 {
+  color: #00c3c3;
+  font-size: 2.5rem;
+}
+
+#gallery .gallery-item img {
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#gallery .gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 300.98px) {
+  #gallery .gallery-item img {
+    margin-bottom: 20px;
+  }
+}
+
+/* Our Package */
+.package-card {
+  padding: 15px;
+  width: 100%;
+  max-width:23rem;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+.package-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.package-info h5 {
+  font-size: 1.5rem;
+}
+
+.package-info p {
+  font-size: 1rem;
+}
+
+.package-info .btn {
+  font-size: 1rem;
+  padding: 10px 20px;
+}
+
+/* Tablet devices (max-width: 991px) */
+@media (max-width: 991px) {
+  .package-card {
+    max-width: 20rem;
+    padding: 12px;
+  }
+
+  .package-info h5 {
+    font-size: 1.3rem;
+  }
+
+  .package-info p {
+    font-size: 0.9rem;
+  }
+
+  .package-info .btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+/* Landscape Phones and smaller tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .package-card {
+    max-width: 18rem;
+    padding: 10px;
+  }
+
+  .package-info h5 {
+    font-size: 1.2rem;
+  }
+
+  .package-info p {
+    font-size: 0.85rem;
+  }
+
+  .package-info .btn {
+    font-size: 0.85rem;
+    padding: 6px 14px;
+  }
+}
+
+/* Portrait Phones (max-width: 576px) */
+@media (max-width: 576px) {
+  .package-card {
+    max-width: 16rem;
+    padding: 8px;
+  }
+
+  .package-info h5 {
+    font-size: 1.1rem;
+  }
+
+  .package-info p {
+    font-size: 0.8rem;
+  }
+
+  .package-info .btn {
+    font-size: 0.8rem;
+    padding: 5px 12px;
+  }
+}
+
+
+.package-card img {
+  width: 300px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.package-info {
+  margin-top: 15px;
+}
+
+@media (max-width: 300px) {
+  .carousel-item {
+    flex-direction: column;
+  }
+}
+
+/* Testimony Section */
+.testimonial-slider {
+  position: relative;
+  overflow: hidden;
+  padding: 2rem 0;
+}
+
+.slider-track {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
+  animation: scroll 30s linear infinite; /* Continuous scroll animation */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.testimonial-card {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  width: 16rem;
+  margin-right: 1.5rem;
+  flex-shrink: 0;
+  position: relative;
+  transition: transform 0.5s ease;
+}
+
+.testimonial-card:hover {
+  transform: scale(1.05);
+}
+
+.testimonial-card img {
+  border-radius: 0.5rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.testimonial-card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  transition: backdrop-filter 0.5s ease;
+}
+
+/* .testimonial-card:hover .overlay {
+    backdrop-filter: blur(10px);
+} */
+
+.testimonial-card p,
+.testimonial-card h4 {
+  color: #000;
+}
+
+.testimonial-card h4 {
+  font-weight: bold;
+}
+
+/* Responsive styles for tablet devices (widths 768px and below) */
+@media (max-width: 768px) {
+  .testimonial-slider {
+    padding: 1.5rem 1rem;
+  }
+
+  .testimonial-card {
+    width: 14rem;
+    padding: 1rem;
+  }
+}
+
+/* Responsive styles for mobile devices (widths 480px and below) */
+@media (max-width: 480px) {
+  .testimonial-slider {
+    padding: 1rem 0.5rem;
+  }
+
+  .testimonial-card {
+    width: 12rem;
+    padding: 0.75rem;
+  }
+
+  .testimonial-card h4 {
+    font-size: 1rem;
+  }
+
+  .testimonial-card p {
+    font-size: 0.875rem;
+  }
+}
+
+.testtimonial_bg {
+  background: #00b8b8;
+}
+
+.star_div {
+  width: 100%;
+  justify-content: center;
+  /* justify-content: space-between; */
+}
+
+.fa-star {
+  color: goldenrod;
+  font-size: 1.5rem;
+}
+
+/* Form Section */
+.contact-section {
+  padding: 60px 0;
+}
+
+.contact-section h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-section h1 span {
+  color: #00c3c3;
+}
+
+.form-control,
+.btn {
+  border-radius: 30px;
+}
+
+.btn {
+  background-color: #00c3c3;
+  color: white;
+  padding: 10px 20px;
+}
+
+@media (max-width: 300px) {
+  .form-control {
+    margin-top: 20px;
+  }
+}
+
+/* Footer Section */
+
+.footer_main {
+  background-color: rgb(29, 197, 206);
+}
+
+.footer_main .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer_main h3 {
+  font-size: 1.5rem;
+}
+
+.footer_main h6 {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.footer_main ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer_main ul li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.fa-facebook {
+  font-size: 2.5rem;
+  transition: transform 0.3s ease;
+}
+
+.fa-facebook:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .footer_main .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer_main .col-1 {
+    display: none;
+  }
+
+  .footer_main .col-4,
+  .footer_main .col-3 {
+    flex: 1;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  .footer_main h3 {
+    font-size: 1.25rem;
+  }
+
+  .footer_main ul li {
+    font-size: 0.875rem;
+  }
+
+  .fa-facebook {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer_main h3 {
+    font-size: 1.125rem;
+  }
+
+  .footer_main ul li {
+    /* font-size: 0.75rem; */
+  }
+
+  .fa-facebook {
+    font-size: 1.5rem;
+  }
+}
+
+.kanak {
+  width: 100%;
+}
+
+.kanak_first {
+  text-align: start;
+  width: 50%;
+}
+.kanak_second {
+  text-align: end;
+  width: 50%;
+}
+
+.icons_div {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.fa-facebook {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+  color: white;
+}
+
+.fa-facebook:hover {
+  transform: scale(1.1);
+}
+
+.fa-instagram {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+  color: white;
+}
+
+.fa-instagram:hover {
+  transform: scale(1.1);
+}
+
+.fa-linkedin {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+  color: white;
+}
+
+.fa-twitter:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 350px) {
+  .fa-facebook {
+    font-size: 1.125rem;
+  }
+
+  .fa-instagram {
+    font-size: 1.125rem;
+  }
+
+  .fa-twitter {
+    font-size: 1.125rem;
+  }
+
+  .kanak_second {
+    font-size: 10px;
+  }
+
+  .kanak_first {
+    font-size: 10px;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .col-3 h6 {
+    text-align: justify;
+  }
+}
+
+@media screen and (min-device-width: 800px) and (max-device-width: 2000px) {
+  .Quicklinks_li {
+    margin-left: 20%;
+  }
+
+  .Quick {
+    margin-left: 10%;
+  }
+}
+
+.logo_img {
+  height: 4.2rem;
+}
+
+/* index2 Cards section */
+.card img {
+  height: 250px;
+  /* width: 420px; */
+}
+
+#aro-button {
+  background-color: black;
+}
+
+.fa-facebook,
+.fa-instagram,
+.fa-whatsapp {
+  font-size: 1.5rem;
+}
+
+.book_now_btn:hover {
+  background-color: black ;
+  color: white;
+}
+
+.book_now_btn {
+  background-color: #f8f9fa;
+}
+
+
+.imgg{
+  height: 14rem;
+}
+
+
+@media screen and (min-width: 800px) and (max-width: 1200px) { 
+  .imgg{
+    height: 10rem;
+  }
+
+}
+
+
+
+
+
+/* Ensure nav arrows are visible across all devices */
+.owl-nav {
+  display: block !important; /* Forces the nav to display */
+}
+
+/* Custom styling for the arrows on larger screens */
+@media (min-width: 1000px) {
+  .owl-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+  }
+
+  .owl-prev, .owl-next {
+      position: absolute;
+      top: 0;
+      width: 40px; 
+      height: 40px;
+      background-color: white; 
+      color: black; /* Change arrow color to black */
+      border-radius: 50%; /* Make the buttons round */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow for better visibility */
+      cursor: pointer;
+      z-index: 1000;
+  }
+
+  /* Adjust positioning */
+  .owl-prev {
+      left: -50px; /* Adjust the position for prev arrow */
+  }
+
+  .owl-next {
+      right: -50px; /* Adjust the position for next arrow */
+  }
+
+  /* Add hover effect */
+  .owl-prev:hover, .owl-next:hover {
+      background-color: white /* Slight change on hover */
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 2000px){
+  .owl-theme{
+      display: none;
+  }
+  }
+
+  .owl-carousel button.owl-dot {
+    background-color: red;
+}
+
+
+
+.top-header{
+  display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+  #book_btnn{
+display: none;  }
+}
